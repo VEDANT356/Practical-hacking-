@@ -46,10 +46,10 @@ Step 7: SNMP and NetBIOS enumeration
 nmap -sU -p 161 192.168.56.102
 nmap --script nbstat.nse -p 137 192.168.56.102
 
-
 Note: Ye sample IPs PDF se hain. Actual scanning sirf instructor ke provided, authorized lab target par karna.
 4. Observation
 Nmap identifies active hosts, port states and available services. In my observed output, the host was reported as up, but all 1000 scanned TCP ports were filtered.
+
 5. Result
 Network scanning was studied using Nmap and Zenmap. Different scanning techniques, port states, service detection and basic firewall filtering were examined.
 
