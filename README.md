@@ -1,4 +1,5 @@
 # Practical-hacking-
+
 Practical 1: Network Scanning Using Nmap and Zenmap
 1. Aim
 To perform network scanning using Nmap and Zenmap, identify open ports, detect services and understand different scanning techniques.
