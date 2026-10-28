@@ -47,37 +47,46 @@ nmap -sU -p 161 192.168.56.102
 nmap --script nbstat.nse -p 137 192.168.56.102
 
 Note: Ye sample IPs PDF se hain. Actual scanning sirf instructor ke provided, authorized lab target par karna.
+
 4. Observation
 Nmap identifies active hosts, port states and available services. In my observed output, the host was reported as up, but all 1000 scanned TCP ports were filtered.
 
 5. Result
 Network scanning was studied using Nmap and Zenmap. Different scanning techniques, port states, service detection and basic firewall filtering were examined.
+_____________________________________________________________________________________________________________________________________________________________________________________________________
 
-Viva Questions — abhi yaad karne ke liye
-Q1. What is Nmap?
+Practical 2: Network Commands — Ping, Ifconfig, Netstat, Traceroute
+1. Aim
+To study network commands used to check host reachability, interface configuration, active connections and the path packets take to a destination.
 
-Nmap stands for Network Mapper. It is a tool used for network discovery and security auditing.
+2. Requirements
+- Windows Operating System
+- Command Prompt / PowerShell
+  
+3. Procedure
+Step 1: Ping — Check host reachability
+ping 192.168.56.102
 
-Q2. What is Zenmap?
 
-Zenmap is the graphical user interface (GUI) for Nmap.
+Step 2: IPConfig — Display network configuration
+ipconfig /all
 
-Q3. What is port scanning?
 
-Port scanning is the process of checking ports on a host to identify their states.
+Step 3: Netstat — Display active connections and listening ports
+netstat -ano
 
-Q4. What is a SYN scan?
 
-A SYN scan is a half-open TCP scan that checks port responses without completing the full TCP connection.
+Step 4: Traceroute — Display the path to a destination
+tracert 8.8.8.8
 
-Q5. What is the use of -sV?
 
-The -sV option detects the services and their versions running on open ports.
+4. Observation
+1. Ping: Displays replies, packet loss and round-trip time.
+2. IPConfig: Displays IP address, subnet mask, default gateway and MAC address.
+3. Netstat: Displays active connections, listening ports and process IDs (PIDs).
+4. Traceroute: Displays the network hops between the computer and the destination.
 
-Q6. What is an ACK scan?
+5. Result
+The network commands were studied to check host reachability, view network configuration, identify active connections and trace the route to a destination.
+____________________________________________________________________________________________________________________________________________________________________________________________________________________
 
-An ACK scan helps determine whether ports are filtered by a firewall. It does not directly identify open ports.
-
-Q7. What is a filtered port?
-
-A filtered port is a port whose state cannot be determined because a firewall or network filter blocks or affects the scan responses.
